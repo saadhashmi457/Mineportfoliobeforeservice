@@ -213,7 +213,72 @@ form button:hover { background: #555; }
 #Projects .pc1 button a { text-decoration: none; color: #b1bbc5ff; }
 
 /* Services */
-#Services .sd { float: left; margin-left: 32px; width: 24%; padding: 12px; }
+
+
+/* Modern Services Section */
+
+.scontainers {
+    
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.firstc {
+    background: #060505d9;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.firstc:hover {
+    transform: translateY(-8px);
+    border-color: #ffd700;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.firstc h2 {
+    color: #d4a900;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.firstc p {
+    color: #fffbfb;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.firstc h4 {
+    color: #fdfbfb;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Responsive Services Cards */
+
+@media (max-width: 650px) {
+    .scontainers {
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .firstc {
+        padding: 22px;
+    }
+}
+
+
+#Services .sd { margin-left: 32px; width: 24%; padding: 12px; }
 #Services .sd h1 { color: #fcd214ff; font-size: 36px; }
 #Services .sd p { color: #cdcdc5fb; padding-left: 24px; font-size: 20px; }
 #Services .sd p button { background: #1f242d; border: 1px solid #cbcb29fb; padding: 4px; }
@@ -224,7 +289,7 @@ form button:hover { background: #555; }
     font-size: 18px;
     cursor: pointer;
 }
-#Services .scontainers {
+/* #Services .scontainers {
     border: 2px solid #d9d9d6fb;
     background: #32394781;
     padding: 32px;
@@ -277,7 +342,7 @@ form button:hover { background: #555; }
     background: #e7e7c8ff;
     color: #080809ff;
     font-size: 18px;
-}
+} */
 
 /* Calculator styles retained from your stylesheet */
 .calculator {
@@ -607,7 +672,63 @@ strong { font-weight: 600; }
         <button><b><a href="#contact" onclick="showSection('contact')">Contact</a></b></button></p>
     </div>
     <div class="scontainers">
-        <!-- Add your service cards here. They were generated dynamically from Django's servicedata database. -->
+        
+
+    <!-- Service 1: Web Development -->
+    <div class="firstc">
+        <h2>Web Development</h2>
+        <p>
+            I develop modern, responsive, and dynamic websites using
+            Python and Django. I specialize in backend development,
+            database management, and building complete web applications.
+        </p>
+        <h4>Technologies</h4>
+        <p>Python | Django | HTML | CSS | JavaScript | SQL</p>
+    </div>
+
+
+    <br><br>
+
+    <!-- Service 2: Web Designing -->
+    <div class="firstc">
+        <h2>Web Designing</h2>
+        <p>
+            I create attractive, responsive, and user-friendly website
+            designs. My focus is on clean layouts, modern styling,
+            and websites that work smoothly on all screen sizes.
+        </p>
+        <h4>Technologies</h4>
+        <p>HTML | CSS | JavaScript | Bootstrap</p>
+    </div>
+
+
+     <br><br>
+    <!-- Service 3: Python Development -->
+    <div class="firstc">
+        <h2>Python Development</h2>
+        <p>
+            I am a Python developer skilled in writing clean and efficient
+            code, developing backend logic, automating tasks, and solving
+            programming problems.
+        </p>
+        <h4>Expertise</h4>
+        <p>Python | Django | Automation | Backend Logic</p>
+    </div>
+
+     <br><br>
+    <!-- Service 4: UI & UX Designing -->
+    <div class="firstc">
+        <h2>UI & UX Designing</h2>
+        <p>
+            I design simple, attractive, and easy-to-use interfaces.
+            I focus on user experience, clean layouts, visual consistency,
+            and making websites easy to navigate.
+        </p>
+        <h4>Focus Areas</h4>
+        <p>UI Design | UX Design | Wireframes | User Experience</p>
+    </div>
+ <br><br>
+
     </div>
 </section>
 
